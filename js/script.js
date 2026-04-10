@@ -123,6 +123,11 @@ function clicarOperador(){
 function clicarResultado() {
     if(!isNaN(inputResultado.value) && calculo.funcaoParaCalcular != null) {
         let resultado = calculo.funcaoParaCalcular(calculo.valorSalvo, Number(inputResultado.value));
+
+        //Arredonda para 10 casas decimais e remove zeros desnecerrários
+        if(typeof resultado === 'number'){
+            resultado = parseFloat(resultado.toFixed(10));
+        }
         inputResultado.value = resultado;
         calculo.valorSalvo = resultado;
         calculo.funcaoParaCalcular = null;
