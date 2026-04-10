@@ -1,0 +1,26 @@
+{
+  "name": "entendendo_integracao_hmtl_css_js_calculadora",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Green-87/Entendendo_Integracao_HMTL_CSS_JS_Calculadora.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Green-87/Entendendo_Integracao_HMTL_CSS_JS_Calculadora/issues"
+  },
+  "homepage": "https://github.com/Green-87/Entendendo_Integracao_HMTL_CSS_JS_Calculadora#readme",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.2.0",
+    "globals": "^17.4.0"
+  }
+}

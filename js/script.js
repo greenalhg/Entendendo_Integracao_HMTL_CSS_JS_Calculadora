@@ -26,7 +26,7 @@ function atribuirEventos(){
     document.getElementById("btnValor9").addEventListener("click", inserirNumero);
 
     //Atribui eventos aos botões de operadores, ponto e resultado
-    document.getElementById("btnPonto").addEventListener("click", inserirNumero);
+    document.getElementById("btnPonto").addEventListener("click", inserirPonto);
     document.getElementById("btnSoma").addEventListener("click", clicarOperador);
     document.getElementById("btnDividir").addEventListener("click", clicarOperador);
     document.getElementById("btnMultiplicar").addEventListener("click", clicarOperador);
@@ -43,7 +43,7 @@ function inserirNumero(){
         // Senão, adiciona o valor aos demais
     } else {
         // Se o valor for zero, substitui o valor do visor pelo número clicado
-        if (inputResultado.value == 0) {
+        if (inputResultado.value === 0) {
             inputResultado.value = event.target.textContent;
         // Senão adiciona o número aos digitos no visor
         } else {
@@ -128,3 +128,7 @@ function clicarResultado() {
         calculo.funcaoParaCalcular = null;
     }
 }
+
+let x = 1+1
+
+document.getElementById("resultado").textContent = x
